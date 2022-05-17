@@ -1,6 +1,7 @@
 package edu.handong.csee.java.example.fileread.benchmark;
 
 import java.io.*;
+import java.util.*;
 
 /**
  * Created by sherxon on 4/23/17. https://github.com/sherxon/AlgoDS/tree/master/src/oi
@@ -32,7 +33,13 @@ public class UsingBufferedReader {
         long duration2 = StopWatch.stop();
         System.out.println(duration2 + " milsec");
 
+        for ( int i = 0; i < args.length; i++ )
+      	 {
+      	    System.out.println( args[i] );
+      	 }
+        
         inputStream2.close();
+        
 
         /*
         //-------------- Test reading 100 MB file. --------------------
